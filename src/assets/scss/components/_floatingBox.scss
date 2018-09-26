@@ -1,0 +1,11 @@
+@import '../config';
+
+$box-shadow: 3px 3px 10px #999;
+
+@mixin floatingBox {
+  background-color: $light-gray;
+  box-shadow: $box-shadow;
+  padding: 20px;
+  margin: 0 0 20px;
+  box-sizing: border-box;
+}

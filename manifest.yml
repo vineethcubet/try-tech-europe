@@ -1,0 +1,9 @@
+---
+applications:
+  - name: ttt-frontend-europe
+    routes:
+      - route: project-e-europe.apps.cl-east-dev02.cf.ford.com
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack#v1.4.16
+    memory: 128M
+    path: ./dist
+

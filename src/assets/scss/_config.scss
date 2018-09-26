@@ -1,0 +1,51 @@
+$tablet-minimum: 768px;
+$laptop-minimum: 1024px;
+$desktop-minimum: 1441px;
+
+$mobile-maximum: 420px;
+
+$black: #58585B;
+$electron-blue: #62C7C0;
+$solar-orange: #F7941C;
+$ev-green: #8BC63F;
+$gloomy-gray: #59595B;
+$coal-powered-gray: #59595B;
+
+$dark-gray: #F2F2F2;
+$light-gray: #FAFAFA;
+$darker-gray: #9B9B9B;
+$fading-gray: #A6A8AB;
+
+$silver: #E6E7E8;
+$root-font-size: 10px;
+$paragraph-font-size: 1rem;
+$input-font-size: 1rem;
+$button-font-size: $input-font-size;
+
+$h1-font-size: 4rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.25rem;
+
+$button-background-color: $solar-orange;
+
+$wrapper-width: 1024px;
+$wrapper-width-desktop: 1440px;
+
+$font-family: 'Roboto', sans-serif;
+
+.wrapper {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $laptop-minimum) {
+  .wrapper {
+    width: $wrapper-width;
+  }
+}
+
+@media screen and (min-width: $desktop-minimum) {
+  .wrapper {
+    width: $wrapper-width-desktop;
+  }
+}

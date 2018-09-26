@@ -1,0 +1,16 @@
+@import '../config';
+
+@mixin caret {
+  position: relative;
+
+  &::before {
+    background-color: $light-gray;
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -16px;
+    left: 30px;
+    transform: rotate(45deg);
+  }
+}

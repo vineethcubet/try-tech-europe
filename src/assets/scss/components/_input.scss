@@ -1,0 +1,23 @@
+@import '../config';
+
+@mixin checkbox {
+  &::before {
+    background-color: $dark-gray;
+    content: " ";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 2px #AAA;
+    position: absolute;
+    margin: -3px 0 0 -3px;
+    cursor: pointer;
+  }
+
+  &:checked::before  {
+    content: '\2713';
+    color: $ev-green;
+    line-height: .25rem;
+    font-size: 2rem;
+  }
+}
